@@ -22,3 +22,8 @@ kualitas_istirahat['buruk'] = fuzz.trimf(kualitas_istirahat.universe, [0, 0, 50]
 kualitas_istirahat['cukup'] = fuzz.trimf(kualitas_istirahat.universe, [30, 50, 70])
 kualitas_istirahat['baik'] = fuzz.trimf(kualitas_istirahat.universe, [50, 100, 100])
 
+# Variabel output: Tingkat Stres
+tingkat_stres = ctrl.Consequent(np.arange(0, 101, 1), 'tingkat_stres')
+tingkat_stres['ringan'] = fuzz.trimf(tingkat_stres.universe, [0, 0, 50])
+tingkat_stres['sedang'] = fuzz.trimf(tingkat_stres.universe, [30, 50, 70])
+tingkat_stres['berat'] = fuzz.trimf(tingkat_stres.universe, [50, 100, 100])
