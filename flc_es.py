@@ -58,3 +58,56 @@ rule8 = ctrl.Rule(kesulitan_materi['sedang'] & kualitas_istirahat['baik'], tingk
 # Membuat sistem kontrol
 stres_ctrl = ctrl.ControlSystem([rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8])
 diagnosa_stres = ctrl.ControlSystemSimulation(stres_ctrl)
+# Fungsi untuk mendapatkan input user
+def get_user_input():
+    print("=== Sistem Diagnosa Tingkat Stres Mahasiswa ===")
+    print("Silakan masukkan data berikut (0-100 atau 0-10):")
+
+    try:
+        km = float(input("Tingkat kesulitan materi (0-100): "))
+        fk = float(input("Frekuensi konsultasi dengan pembimbing per minggu (0-10): "))
+        ki = float(input("Kualitas istirahat (0-100): "))
+
+        if not (0 <= km <= 100) or not (0 <= fk <= 10) or not (0 <= ki <= 100):
+            raise ValueError("Input di luar range yang ditentukan")
+
+        return km, fk, ki
+    except ValueError as e:
+        print(f"Input tidak valid: {e}")
+        return None
+
+# Mendapatkan input dan melakukan perhitungan
+user_input = get_user_input()
+if user_input:
+    km, fk, ki = user_input
+
+    # Set input ke sistem fuzzy
+    diagnosa_stres.input['kesulitan_materi'] = km
+    diagnosa_stres.input['frekuensi_konsultasi'] = fk
+    diagnosa_stres.input['kualitas_istirahat'] = ki
+
+    # Proses perhitungan
+    diagnosa_stres.compute()
+
+    # Menampilkan hasil
+    print("\n=== Hasil Diagnosa ===")
+    print(f"Tingkat stres: {diagnosa_stres.output['tingkat_stres']:.2f}")
+
+    # Visualisasi hasil
+    tingkat_stres.view(sim=diagnosa_stres)
+    plt.title('Hasil Diagnosa Tingkat Stres')
+    plt.show()
+
+    # Interpretasi hasil
+    stres_value = diagnosa_stres.output['tingkat_stres']
+    if stres_value <= 40:
+        print("Interpretasi: Stres Ringan")
+        print("Rekomendasi: Pertahankan pola kerja dan istirahat yang baik")
+    elif stres_value <= 70:
+        print("Interpretasi: Stres Sedang")
+        print("Rekomendasi: Perlu manajemen waktu yang lebih baik dan konsultasi rutin")
+    else:
+        print("Interpretasi: Stres Berat")
+        print("Rekomendasi: Segera konsultasikan dengan pembimbing dan layanan konseling kampus")
+else:
+    print("Diagnosa tidak dapat dilanjutkan karena input tidak valid")
