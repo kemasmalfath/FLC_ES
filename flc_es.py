@@ -44,3 +44,17 @@ plt.show()
 tingkat_stres.view()
 plt.title('Tingkat Stres Mahasiswa')
 plt.show()
+
+# Membuat aturan fuzzy berdasarkan pengetahuan psikologis
+rule1 = ctrl.Rule(kesulitan_materi['rendah'] & frekuensi_konsultasi['jarang'] & kualitas_istirahat['baik'], tingkat_stres['ringan'])
+rule2 = ctrl.Rule(kesulitan_materi['sedang'] & frekuensi_konsultasi['normal'] & kualitas_istirahat['cukup'], tingkat_stres['sedang'])
+rule3 = ctrl.Rule(kesulitan_materi['tinggi'] & frekuensi_konsultasi['sering'] & kualitas_istirahat['buruk'], tingkat_stres['berat'])
+rule4 = ctrl.Rule(kesulitan_materi['tinggi'] | kualitas_istirahat['buruk'], tingkat_stres['sedang'])
+rule5 = ctrl.Rule(frekuensi_konsultasi['sering'] & kualitas_istirahat['baik'], tingkat_stres['sedang'])
+rule6 = ctrl.Rule(kesulitan_materi['rendah'] & frekuensi_konsultasi['jarang'] & kualitas_istirahat['buruk'], tingkat_stres['sedang'])
+rule7 = ctrl.Rule(kesulitan_materi['tinggi'] & frekuensi_konsultasi['jarang'], tingkat_stres['berat'])
+rule8 = ctrl.Rule(kesulitan_materi['sedang'] & kualitas_istirahat['baik'], tingkat_stres['ringan'])
+
+# Membuat sistem kontrol
+stres_ctrl = ctrl.ControlSystem([rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8])
+diagnosa_stres = ctrl.ControlSystemSimulation(stres_ctrl)
