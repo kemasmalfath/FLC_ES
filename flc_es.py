@@ -27,3 +27,20 @@ tingkat_stres = ctrl.Consequent(np.arange(0, 101, 1), 'tingkat_stres')
 tingkat_stres['ringan'] = fuzz.trimf(tingkat_stres.universe, [0, 0, 50])
 tingkat_stres['sedang'] = fuzz.trimf(tingkat_stres.universe, [30, 50, 70])
 tingkat_stres['berat'] = fuzz.trimf(tingkat_stres.universe, [50, 100, 100])
+
+# Visualisasi fungsi keanggotaan
+kesulitan_materi.view()
+plt.title('Tingkat Kesulitan Materi')
+plt.show()
+
+frekuensi_konsultasi.view()
+plt.title('Frekuensi Konsultasi dengan Pembimbing')
+plt.show()
+
+kualitas_istirahat.view()
+plt.title('Kualitas Istirahat Mahasiswa')
+plt.show()
+
+tingkat_stres.view()
+plt.title('Tingkat Stres Mahasiswa')
+plt.show()
