@@ -139,7 +139,7 @@ Proyek ini dibuat oleh:
 **NIM:** [Nomor Induk Mahasiswa]  
 **Kelas:** [Nama Kelas atau Prodi]
 
----
+
 
 ## ✅ Lisensi
 
