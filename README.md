@@ -18,7 +18,6 @@ Sistem ini dibangun menggunakan **logika fuzzy** untuk mengakomodasi data lingui
 - Memberikan **rekomendasi** yang sesuai berdasarkan hasil diagnosa
 
 
-
 ## 🧩 Variabel dalam Sistem
 
 ### 📥 Variabel Input:
