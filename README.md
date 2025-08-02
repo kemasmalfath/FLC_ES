@@ -17,7 +17,6 @@ Sistem ini dibangun menggunakan **logika fuzzy** untuk mengakomodasi data lingui
 - Menggunakan pendekatan fuzzy untuk menangani ketidakpastian dan data linguistik.
 - Memberikan **rekomendasi** yang sesuai berdasarkan hasil diagnosa
 
-
 ## 🧩 Variabel dalam Sistem
 
 ### 📥 Variabel Input:
