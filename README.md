@@ -35,7 +35,6 @@ Sistem ini dibangun menggunakan **logika fuzzy** untuk mengakomodasi data lingui
    - Buruk
    - Cukup
    - Baik
-
 ### 📤 Variabel Output:
 
 - **Tingkat Stres Mahasiswa (0 - 100)**
