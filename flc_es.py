@@ -4,6 +4,7 @@ import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 import matplotlib.pyplot as plt
 
+
 # Variabel input 1: Tingkat Kesulitan Materi
 kesulitan_materi = ctrl.Antecedent(np.arange(0, 101, 1), 'kesulitan_materi')
 kesulitan_materi['rendah'] = fuzz.trimf(kesulitan_materi.universe, [0, 0, 50])
