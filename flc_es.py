@@ -9,6 +9,7 @@ kesulitan_materi['rendah'] = fuzz.trimf(kesulitan_materi.universe, [0, 0, 50])
 kesulitan_materi['sedang'] = fuzz.trimf(kesulitan_materi.universe, [30, 50, 70])
 kesulitan_materi['tinggi'] = fuzz.trimf(kesulitan_materi.universe, [50, 100, 100])
 
+
 # Variabel input 2: Frekuensi Konsultasi
 frekuensi_konsultasi = ctrl.Antecedent(np.arange(0, 11, 1), 'frekuensi_konsultasi')
 frekuensi_konsultasi['jarang'] = fuzz.trimf(frekuensi_konsultasi.universe, [0, 0, 5])
