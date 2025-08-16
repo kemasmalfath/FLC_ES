@@ -97,6 +97,7 @@ if user_input:
     plt.title('Hasil Diagnosa Tingkat Stres')
     plt.show()
 
+    
     # Interpretasi hasil
     stres_value = diagnosa_stres.output['tingkat_stres']
     if stres_value <= 40:
