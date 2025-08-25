@@ -12,6 +12,7 @@ Sistem ini dibangun menggunakan **logika fuzzy** untuk mengakomodasi data lingui
 
 ## 🧠 Tujuan Sistem
 
+
 - Mendiagnosa **tingkat stres mahasiswa tingkat akhir** berdasarkan gejala subjektif.
 - Menggunakan pendekatan fuzzy untuk menangani ketidakpastian dan data linguistik.
 - Memberikan **rekomendasi** yang sesuai berdasarkan hasil diagnosa
