@@ -6,7 +6,6 @@ Mahasiswa tingkat akhir sering mengalami stres saat menyusun tugas akhir (skrips
 - Tingkat kesulitan materi yang dihadapi,
 - Frekuensi konsultasi dengan dosen pembimbing,
 - Kualitas istirahat atau tidur mahasiswa.
-
 Sistem ini dibangun menggunakan **logika  fuzzy** untuk mengakomodasi data linguistik dan ketidakpastian dalam mendiagnosis tingkat stres. Diharapkan, sistem ini dapat membantu **dosen wali atau konselor kampus** dalam mengidentifikasi kondisi psikologis mahasiswa dan memberikan rekomendasi yang sesuai.
 
 ## 🧠 Tujuan Sistem
