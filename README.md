@@ -3,7 +3,6 @@
 ## 📌 Deskripsi Proyek
 
 Mahasiswa tingkat akhir sering mengalami stres saat menyusun tugas akhir (skripsi atau tesis). Tingkat stres ini bersifat subjektif dan tidak pasti, dipengaruhi oleh berbagai faktor seperti:
-
 l
 - Tingkat kesulitan materi yang dihadapi,
 - Frekuensi konsultasi dengan dosen pembimbing,
