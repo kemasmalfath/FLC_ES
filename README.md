@@ -1,7 +1,6 @@
 # 🎓 Sistem Diagnosa Tingkat Stres Mahasiswa Menggunakan Logika Fuzzy
 ## 📌 Deskripsi Proyek
 Mahasiswa tingkat akhir sering mengalami stres saat menyusun tugas akhir (skripsi atau tesis). Tingkat stres ini bersifat subjektif dan tidak pasti, dipengaruhi oleh berbagai faktor seperti:
-
 - Tingkat kesulitan materi yang dihadapi,
 - Frekuensi konsultasi dengan dosen pembimbing,
 - Kualitas istirahat atau tidur mahasiswa.
