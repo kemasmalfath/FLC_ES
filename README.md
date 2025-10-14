@@ -9,7 +9,6 @@ Sistem ini dibangun menggunakan **logika  fuzzy** untuk mengakomodasi data lingu
 - Mendiagnosa **tingkat stres mahasiswa tingkat akhir** berdasarkan gejala subjektif.
 - Menggunakan pendekatan fuzzy untuk menangani ketidakpastian dan data linguistik.
 - Memberikan **rekomendasi** yang sesuai berdasarkan hasil diagnosa
-
 ## 🧩 Variabel dalam Sistem
 
 ### 📥 Variabel Input:
