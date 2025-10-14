@@ -11,6 +11,7 @@ Sistem ini dibangun menggunakan **logika  fuzzy** untuk mengakomodasi data lingu
 - Memberikan **rekomendasi** yang sesuai berdasarkan hasil diagnosa
 ## 🧩 Variabel dalam Sistem
 
+
 ### 📥 Variabel Input:
 
 1. **Tingkat Kesulitan Materi (0 - 100)**
